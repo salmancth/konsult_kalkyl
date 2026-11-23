@@ -64,7 +64,6 @@ pnpm demo 1500000   # print a comparison table in the terminal
 
 | File | Purpose |
 | --- | --- |
-| [HANDOVER-SONNET.md](HANDOVER-SONNET.md) | Rules of engagement for the developer |
 | [docs/01-architecture.md](docs/01-architecture.md) | System architecture, module boundaries, data model |
 | [docs/02-stack.md](docs/02-stack.md) | Technology stack + Architecture Decision Records |
 | [docs/03-domain-tax-rules-2026.md](docs/03-domain-tax-rules-2026.md) | Swedish tax/payout rules and formulas (the spec) |
