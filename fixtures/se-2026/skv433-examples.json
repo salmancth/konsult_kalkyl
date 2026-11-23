@@ -1,0 +1,123 @@
+{
+  "description": "Worked examples copied from Skatteverket SKV 433 'Teknisk beskrivning skattetabeller 2026' (utgåva 36, 2025-12-10). The examples use tax table 34: 34 % total rate of which 1.16 percentage points are burial fee / church fee, i.e. a municipal tax rate (KI) of 32.84 %. Expected values are the figures printed in the document.",
+  "source": "https://www.skatteverket.se/download/18.1522bf3f19aea8075ba55c/1766385913260/teknisk-beskrivning-skv-433-2026-utgava-36.pdf",
+  "municipalTaxRate": 0.3284,
+  "grundavdrag": [
+    {
+      "earnedIncome": 40000,
+      "expected": 25100,
+      "ref": "§7.5.3 example 1"
+    },
+    {
+      "earnedIncome": 90000,
+      "expected": 31400,
+      "ref": "§7.5.2 example 1"
+    },
+    {
+      "earnedIncome": 150000,
+      "expected": 43400,
+      "ref": "§7.5.3 example 2"
+    },
+    {
+      "earnedIncome": 240000,
+      "expected": 40000,
+      "ref": "§7.5.2 example 2"
+    },
+    {
+      "earnedIncome": 250000,
+      "expected": 39000,
+      "ref": "§7.5.3 example 3"
+    }
+  ],
+  "jobbskatteavdrag": [
+    {
+      "earnedIncome": 40000,
+      "expected": 4893,
+      "ref": "§7.5.3 example 1 (same formula below 8.08 PBB)"
+    },
+    {
+      "earnedIncome": 90000,
+      "expected": 11976,
+      "ref": "§7.5.2 example 1"
+    },
+    {
+      "earnedIncome": 150000,
+      "expected": 15668,
+      "ref": "§7.5.3 example 2 (same formula below 8.08 PBB)"
+    },
+    {
+      "earnedIncome": 240000,
+      "expected": 26083,
+      "ref": "§7.5.2 example 2"
+    },
+    {
+      "earnedIncome": 250000,
+      "expected": 27236,
+      "ref": "§7.5.3 example 3 (same formula below 8.08 PBB)"
+    }
+  ],
+  "stateTax": [
+    {
+      "taxableIncome": 695000,
+      "expected": 10400,
+      "ref": "§7.2 example (20 % x (695 000 - 643 000))"
+    }
+  ],
+  "publicPensionFee": [
+    {
+      "earnedIncome": 181200,
+      "expected": 12700,
+      "ref": "§7.4 example (7 % x 181 200 = 12 684 -> 12 700)"
+    },
+    {
+      "earnedIncome": 800000,
+      "expected": 47100,
+      "ref": "§7.4 maximum fee 2026 (7 % x 8.07 IBB)"
+    }
+  ],
+  "publicServiceFee": [
+    {
+      "taxableIncome": 100000,
+      "expected": 1000,
+      "ref": "§7.6 example 1"
+    },
+    {
+      "taxableIncome": 175000,
+      "expected": 1184,
+      "ref": "§7.6 example 2 / maximum 2026"
+    }
+  ],
+  "earnedIncomeCredit": [
+    {
+      "taxableIncome": 200000,
+      "expected": 1200,
+      "ref": "§7.5.4 example 1"
+    },
+    {
+      "taxableIncome": 400000,
+      "expected": 1500,
+      "ref": "§7.5.4 example 2"
+    }
+  ],
+  "brytpunkt": {
+    "expected": 660400,
+    "ref": "Belopp och procent 2026 (born 1959 or later)"
+  },
+  "grundavdragSenior": [
+    {
+      "earnedIncome": 200000,
+      "expected": 110900,
+      "ref": "§6.2 example 1 (66 873.60 + 43 995.20 = 110 873.60, rounded up)"
+    },
+    {
+      "earnedIncome": 90000,
+      "expected": 72000,
+      "ref": "§6.2 example 2 (40 650.00 + 31 320.00 = 71 970.00, rounded up)"
+    },
+    {
+      "earnedIncome": 390000,
+      "expected": 157900,
+      "ref": "§6.2 example 3 (132 826.40 + 24 995.20 = 157 821.60, rounded up)"
+    }
+  ]
+}

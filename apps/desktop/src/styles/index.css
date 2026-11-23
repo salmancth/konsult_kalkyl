@@ -1,0 +1,96 @@
+@import 'tailwindcss';
+
+/* The theme is applied by adding/removing the `dark` class on <html> (see app/useTheme.ts), so the
+   user can choose light / dark / follow-system. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Segoe UI Variable', 'Segoe UI', system-ui, sans-serif;
+  --color-navy: #1f2a44;
+  --color-accent: #3ba7a0;
+  --color-consultant: #2f9e6e;
+  --color-pension: #3ba7a0;
+  --color-state: #8a94a6;
+  --color-company: #1f2a44;
+  --color-provider: #e0a030;
+  --color-external: #b8a58f;
+  --color-retained: #8cc4ee;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-900 dark:text-slate-100;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.card {
+  @apply rounded-lg border border-slate-200 bg-white shadow-sm dark:border-slate-700 dark:bg-slate-800;
+}
+
+.input {
+  @apply w-full rounded-md border border-slate-300 bg-white px-2 py-1.5 text-sm tabular-nums dark:border-slate-600 dark:bg-slate-900;
+}
+
+.btn {
+  @apply rounded-md border border-slate-300 bg-white px-3 py-1.5 text-sm hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-600 dark:bg-slate-800 dark:hover:bg-slate-700;
+}
+
+.btn-primary {
+  @apply rounded-md bg-navy px-3 py-1.5 text-sm text-white hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-accent dark:text-slate-900;
+}
+
+/* Buttons on the navy header. */
+.btn-ghost {
+  @apply rounded-md border border-white/30 px-3 py-1.5 text-sm text-white hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-50;
+}
+
+/* The print report is invisible on screen and is the only thing printed. */
+.print-only {
+  display: none;
+}
+
+@page {
+  margin: 14mm;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  /* Two print layouts share the page: the full report and the one-page offer sheet. */
+  html[data-print='offer'] .print-report,
+  html:not([data-print='offer']) .print-offer {
+    display: none !important;
+  }
+
+  .page-break {
+    break-before: page;
+  }
+
+  html,
+  body,
+  #root {
+    height: auto;
+    background: white !important;
+    color: black !important;
+  }
+
+  tr,
+  li {
+    break-inside: avoid;
+  }
+}

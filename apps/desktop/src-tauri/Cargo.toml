@@ -1,0 +1,31 @@
+[package]
+name = "lyvan-payout"
+version = "0.1.0"
+description = "LYVAN Payout - offline payout calculator for LYVAN consultants"
+authors = ["LYVAN"]
+license = "UNLICENSED"
+publish = false
+edition = "2021"
+rust-version = "1.77"
+
+[lib]
+name = "lyvan_payout_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+# No business logic lives in Rust (HANDOVER rule 6) and the app is offline (rule 7): the shell only
+# needs the window plus three local plugins - key/value store, save dialog, file write.
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-store = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-fs = "2"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+panic = "abort"
+strip = true

@@ -1,0 +1,97 @@
+{
+  "app": { "title": "LYVAN Payout", "subtitle": "Utbetalningskalkylator för konsulter", "disclaimer": "Endast uppskattningar – ingen skatterådgivning. Verifiera alla belopp mot Skatteverket.", "loading": "Laddar…" },
+  "banner": { "unverified": "Reglerna för {{year}} är inte fullt ut verifierade mot Skatteverket. Fortfarande overifierat: {{items}}. Använd resultaten som uppskattning." },
+  "tabs": { "label": "Vyer", "overview": "Översikt", "offer": "Erbjudande", "compare": "Jämför", "sweep": "Omsättningsanalys", "optimizer": "Optimering (eget AB)", "saved": "Sparade", "settings": "Inställningar" },
+  "header": { "language": "Språk", "theme": "Tema", "settings": "Inställningar" },
+  "input": {
+    "revenue": "Fakturerad omsättning (exkl. moms)", "annual": "Per år", "hourly": "Timpris × timmar", "hourlyRate": "Timpris (kr)", "hours": "Fakturerade timmar",
+    "overhead": "Omkostnader (kr/år)", "municipality": "Kommun", "municipalityCustom": "Egen skattesats / riksgenomsnitt", "localFees": "Kyrkoavgift {{church}} + begravningsavgift {{burial}} (länssnitt)", "municipalRate": "Kommunalskatt (%)", "birthYear": "Födelseår", "church": "Medlem i Svenska kyrkan", "taxYear": "Skatteår",
+    "scenarioSettings": "Inställningar per scenario", "common": "Gemensamma antaganden", "invalid": "Inte ett giltigt tal", "clamped": "Justerat till tillåtet intervall {{min}} – {{max}}", "revenueSlider": "Reglage för fakturerad omsättning"
+  },
+  "view": { "annual": "Per år", "monthly": "Per månad", "metric": "Mått", "period": "Period", "netCash": "Nettokassa", "consultantValue": "Konsultvärde (netto + pension)", "companyMargin": "LYVAN-marginal" },
+  "card": { "net": "Netto", "ofRevenue": "av omsättning", "pension": "Pension", "warnings": "{{count}} varning(ar)", "gross": "Brutto", "toState": "Till staten", "company": "LYVAN / leverantör", "retained": "Kvar i bolaget", "rank": "#{{n}}", "details": "Visa detaljer" },
+  "detail": {
+    "title": "Detaljer", "line": "Post", "amount": "Belopp", "pct": "% av omsättning", "receiver": "Mottagare", "formula": "Formel",
+    "reconciled": "Avstämd ✓ – posterna summerar till omsättningen", "reconciledShortfall": "Posterna summerar till omsättningen, men resultatet är flaggat: underskottet på {{amount, kr}} ligger i balansposten",
+    "notReconciled": "Posterna summerar inte till omsättningen", "assumptions": "Antaganden", "warningsTitle": "Varningar", "close": "Stäng", "whereKrona": "Vart varje krona går", "scenarioSettings": "Inställningar för scenariot", "balance": "Avrundningsjustering i balansposten: {{amount, kr}}"
+  },
+  "party": { "consultant": "Konsult", "company": "LYVAN", "state": "Staten", "pension": "Pension", "provider": "Leverantör", "external": "Externa kostnader", "retained": "Kvar i bolaget" },
+  "sweep": { "title": "Nettokassa vs omsättning", "revenue": "Omsättning", "crossover": "{{scenario}} tar ledningen", "yourRevenue": "Din omsättning" },
+  "offer": {"title": "Erbjudandekalkyl", "intro": "Vänd på räkningen: ange vilken lön du vill ha och se vad som måste faktureras i varje utbetalningsmodell, och vilken modell som ger mest vid vilken omsättning.", "targetNet": "Önskad lön per månad (kr)", "metric": "Målet avser", "metric_netCash": "Endast nettolön", "metric_consultantValue": "Nettolön + pension", "metric_totalValue": "Nettolön + pension + pengar kvar i mitt bolag (beskattas senare)", "metricNote": "Pengar som lämnas kvar i ditt eget bolag eller din fond är inte beskattade som inkomst än, så det sista alternativet visar mer än du kan spendera.", "hoursHint": "Används för timpriset", "needTitle": "För att få {{target}} per månad behöver du fakturera", "col": {"scenario": "Modell", "perYear": "Per år", "perMonth": "Per månad", "hourly": "Per timme", "company": "LYVAN / leverantör behåller", "netMonth": "Netto per månad", "taxShare": "Skatteandel"}, "lowest": "Lägst", "open": "Öppna", "unreachable": "Går inte att nå vid någon rimlig omsättning", "note": "Regler för {{year}}. Per månad = per år ÷ 12. ”Skatteandel” är skatter och avgifter som andel av det som återstår efter omkostnader och LYVANs/leverantörens andel.", "bandsTitle": "Vilken modell ger mest vid vilken omsättning", "bandsIntro": "Jämfört på {{metric}}, med dina inställningar.", "noBands": "Inget att jämföra: scenarioinställningarna är ogiltiga.", "upTo": "Upp till {{to}}", "from": "Från {{from}}", "sheetTitle": "Erbjudandeblad", "sheetIntro": "En utskrift (eller PDF) på en sida av vald modell vid den fakturering som krävs för ditt mål.", "sheetScenario": "Modell", "printSheet": "Skriv ut erbjudandeblad", "sheet": {"title": "Utbetalningserbjudande", "headline_netCash": "För att få {{net}} per månad netto i modellen ”{{scenario}}” krävs fakturering på:", "headline_consultantValue": "För att nå {{net}} per månad i nettolön plus pension i modellen ”{{scenario}}” krävs fakturering på:", "headline_totalValue": "För att nå {{net}} per månad i nettolön, pension och pengar kvar i ditt bolag i modellen ”{{scenario}}” krävs fakturering på:", "billing": "Fakturering som krävs", "perYear": "per år", "perMonth": "per månad", "hourly": "Timpris ({{hours}} h/år)", "netMonth": "Nettolön per månad", "netYear": "Nettolön per år", "pension": "Pensionspremier per år", "tax": "Skatteandel", "breakdown": "Vart pengarna går", "perYearCol": "Per år", "perMonthCol": "Per månad", "monthlyNote": "Månadsbelopp är årsbeloppen delade med 12; den faktiska preliminärskatten följer Skatteverkets skattetabeller."}},
+  "compare": { "title": "Vart pengarna går", "mode": "Skala", "percent": "Andel av helheten (100 %)", "kronor": "Kronor", "table": "Datatabell" },
+  "optimizer": {
+    "title": "Netto vs lön (eget AB)", "salary": "Lön", "best": "Bästa lön", "apply": "Använd optimal lön", "pensionWeight": "Värde av 1 kr pension", "retainedWeight": "Värde av 1 kr kvar i AB", "objective": "Målfunktion",
+    "netCashAtBest": "Nettokassa vid optimum", "pensionAtBest": "Pension vid optimum", "retainedAtBest": "Kvar i AB vid optimum", "maxSalary": "Högsta möjliga lön", "weightsHelp": "Vikterna sparas med inställningarna för eget AB och används även av lönestrategin ”Optimera”."
+  },
+  "saved": { "title": "Sparade kalkyler", "name": "Namn", "save": "Spara aktuell kalkyl", "load": "Ladda", "delete": "Ta bort", "duplicate": "Duplicera", "empty": "Inga sparade kalkyler ännu.", "bestScenario": "Bäst", "confirmDelete": "Ta bort ”{{name}}”?", "confirm": "Ja, ta bort", "cancel": "Avbryt", "rename": "Byt namn" },
+  "settings": {
+    "language": "Språk", "theme": "Tema", "themeSystem": "Följ systemet", "themeLight": "Ljust", "themeDark": "Mörkt", "taxYear": "Standard skatteår", "defaultMunicipal": "Standard kommunalskatt (%)",
+    "lyvanDefaults": "LYVAN-standardvärden", "lyvanDefaultsHelp": "Kommersiella standardvärden för nya kalkyler. Ändrar du ett värde uppdateras även aktuell kalkyl om den fortfarande använder det gamla standardvärdet.",
+    "firmRetentionPct": "Anställd: LYVAN behåller (%)", "firmCutPct": "Intäktsdelning: LYVAN-andel (%)", "brokerFeePct": "Eget AB: förmedlingsavgift (%)", "providerFeePct": "Egenanställning: leverantörsavgift (%)",
+    "resetOptions": "Återställ scenarioinställningar till standard", "resetAll": "Återställ aktuell kalkyl", "resetAllConfirm": "Återställa alla indata i aktuell kalkyl? Sparade kalkyler behålls.", "reset": "Återställ",
+    "rules": "Skatteregler", "rulesStatus": "Regeluppsättning {{id}}: {{status}}", "rulesVerified": "verifierad", "rulesUnverified": "inte fullt ut verifierad", "unverifiedItems": "Fortfarande overifierat", "sources": "Källor",
+    "about": "Om", "version": "Version {{version}}", "dataLocation": "All data stannar på den här datorn. Ingen nätverksåtkomst, ingen telemetri."
+  },
+  "export": { "csv": "Exportera CSV", "print": "Skriv ut / PDF", "saved": "Sparad: {{path}}", "failed": "Exporten misslyckades: {{message}}", "col": { "scenario": "Scenario", "line": "Post", "amount": "Belopp (kr)", "pct": "% av omsättning", "receiver": "Mottagare", "kind": "Typ", "formula": "Formel", "revenue": "Omsättning (kr)", "rules": "Regler" } },
+  "print": { "title": "Jämförelse av utbetalning", "generated": "Skapad", "inputs": "Indata", "scenarios": "Jämförelse av scenarier", "ruleSet": "Regeluppsättning", "perScenario": "Detaljerad uppdelning" },
+  "footer": { "rules": "Regler {{id}}", "verified": "verifierade", "unverified": "inte fullt ut verifierade" },
+  "error": {
+    "tooBig": "högst {{limit}}", "tooSmall": "minst {{limit}}", "invalidValue": "inte ett giltigt värde",
+    "scenarioInvalid": "{{name}}: ogiltiga inställningar", "fixOrReset": "Rätta värdet i scenarioinställningarna eller återställ dem till standard.", "resetOptions": "Återställ scenarioinställningar", "unexpected": "Oväntat fel: {{message}}",
+    "boundaryTitle": "Något gick fel", "boundaryBody": "Vyn kraschade. Dina sparade kalkyler är säkra. Ladda om för att fortsätta.", "reload": "Ladda om", "loadFailed": "Sparad data kunde inte läsas ({{message}}). Startar med standardvärden; den gamla filen skrivs över vid nästa ändring."
+  },
+  "overview": { "assumptions": "Antaganden", "scenarioAssumptions": "{{name}}", "invalidScenarios": "Scenarier med ogiltiga inställningar" },
+  "ruleItem": {
+    "municipalTaxAverage": "genomsnittlig kommunalskatt", "burialFeeAverage": "genomsnittlig begravningsavgift", "defaultChurchFeeRate": "genomsnittlig kyrkoavgift", "slp": "särskild löneskatt (SLP)", "itp1": "ITP 1-satser",
+    "loneVaxlingUplift": "påslag vid löneväxling", "egenavgifterBeforePeriodiseringsfond": "egenavgifter före periodiseringsfond",
+    "semester": { "supplementPerDayAgreement": "semestertillägg (avtal)" },
+    "threeTwelve": { "wageBasedRate": "3:12 lönebaserad andel", "excessEmploymentCapIbb": "3:12 tak för tjänsteinkomst" }
+  },
+  "scenario": {
+    "salaried": { "label": "Anställd konsult", "description": "Traditionellt konsultbolag: lön + pension, LYVAN bär sälj- och bänkrisk." },
+    "revenue-share": { "label": "Intäktsdelning (70/30, 80/20)", "description": "Hög utbetalning: LYVAN tar en andel, konsulten får en egen pott som lön + pension." },
+    "umbrella": { "label": "Egenanställning", "description": "Faktureringsbolag tar en avgift; allt utbetalas som lön." },
+    "sole-trader": { "label": "Enskild firma", "description": "Överskott beskattas som inkomst av näringsverksamhet med egenavgifter." },
+    "own-ab": { "label": "Eget aktiebolag (3:12)", "description": "Lön upp till brytpunkten och utdelning enligt 3:12-reglerna." }
+  },
+  "opt": {
+    "firmRetentionPct": "LYVAN behåller (%)", "firmCutPct": "LYVAN-andel (%)", "overheadFromPot": "Omkostnader betalas ur potten", "loneVaxling": "Löneväxling (kr/år)",
+    "providerFeePct": "Avgift (%)", "periodiseringsfondPct": "Periodiseringsfond (%, max 30)", "brokerFeePct": "LYVAN-förmedlingsavgift (%)", "salaryStrategy": "Lönestrategi",
+    "customSalary": "Egen lön (kr/år)", "ownershipPct": "Ägarandel (%)", "ownersInCompany": "Antal ägare", "savedDividendSpace": "Sparat utdelningsutrymme (kr)", "capDividendAtGransbelopp": "Begränsa utdelning till gränsbelopp",
+    "pensionModel": "Pension", "holidayModel": "Semester", "pensionWeight": "Optimering: värde av 1 kr pension", "retainedWeight": "Optimering: värde av 1 kr kvar i AB",
+    "strategy": { "brytpunkt": "Upp till brytpunkten", "custom": "Egen lön", "optimize": "Optimera" },
+    "pension": { "itp1": "ITP 1", "pct": "Procent av lön", "none": "Ingen" },
+    "holiday": { "supplement-legal": "Semestertillägg (lag)", "supplement-agreement": "Semestertillägg (avtal)", "compensation": "Semesterersättning 12 %", "none": "Ingen" },
+    "pensionPct": "Pension (% av lön)"
+  },
+  "line": {
+    "revenue": "Fakturerad omsättning", "firm_retention": "LYVAN behåller", "firm_cut": "LYVAN-andel", "provider_fee": "Leverantörsavgift", "broker_fee": "LYVAN-förmedlingsavgift", "overhead": "Omkostnader",
+    "employer_fees": "Arbetsgivaravgifter", "pension_premium": "Tjänstepension", "special_payroll_tax": "Särskild löneskatt", "gross_salary": "Bruttolön", "municipal_tax": "Kommunalskatt", "state_tax": "Statlig inkomstskatt",
+    "burial_fee": "Begravningsavgift", "church_fee": "Kyrkoavgift", "public_service_fee": "Public service-avgift", "jobbskatteavdrag": "Jobbskatteavdrag", "earned_income_credit": "Skattereduktion förvärvsinkomst", "net_cash": "Nettokassa",
+    "taxable_surplus": "Överskott", "periodiseringsfond": "Avsättning periodiseringsfond", "egenavgifter": "Egenavgifter", "profit_before_tax": "Resultat före skatt", "corporate_tax": "Bolagsskatt",
+    "retained_in_ab": "Kvar i AB", "dividend_gross": "Utdelning (brutto)", "net_salary": "Nettolön", "dividend_tax": "Utdelningsskatt (20 %)", "dividend_excess_tax": "Skatt på utdelning över gränsbelopp", "net_dividend": "Nettoutdelning"
+  },
+  "warning": {
+    "BUDGET_TOO_LOW": "Budgeten räcker inte ens till fasta kostnader.",
+    "ABOVE_BRYTPUNKT": "Inkomsten {{income, kr}} överstiger brytpunkten {{brytpunkt, kr}} – 20 % statlig skatt på överskjutande del.",
+    "SALARY_BELOW_SGI_CAP": "Lönen {{income, kr}} understiger SGI-taket {{cap, kr}} – lägre sjuk-/föräldrapenning.",
+    "SALARY_BELOW_PGI_CAP": "Lönen {{income, kr}} understiger pensionsgrundande tak {{cap, kr}} – lägre allmän pension.",
+    "CONSIDER_LONEVAXLING": "Överväg löneväxling för att undvika statlig skatt.", "NEGATIVE_PROFIT": "Negativt resultat.", "PERIODISERINGSFOND_TAXED_LATER": "Avsättningen beskattas när den återförs.",
+    "PERIODISERINGSFOND_CAPPED": "Avsättningen begränsades till det lagstadgade maximumet {{maxPct, pct}}.",
+    "SOLE_TRADER_PERSONAL_LIABILITY": "Enskild firma: personligt ansvar, ingen arbetsgivarpension.",
+    "DIVIDEND_EXCEEDS_GRANSBELOPP": "Utdelningen överstiger gränsbeloppet {{gransbelopp, kr}} med {{excess, kr}} – överskottet beskattas som tjänsteinkomst.",
+    "RETAINED_IN_AB": "{{retained, kr}} blir kvar i AB (utdelningen begränsad till gränsbeloppet).", "PARTNER_SHARES_GRUNDBELOPP": "Grundbeloppet delas mellan ägarna.",
+    "DIVIDEND_PAID_NEXT_YEAR": "Utdelning betalas normalt året efter (efter bolagsstämman).",
+    "SALARY_CAPPED_BY_BUDGET": "Lönen begränsad till {{salary, kr}} av budgeten (mål {{target, kr}}).",
+    "AGE_66_PLUS": "Ålder {{age}} vid årets början: reglerna för 66+ tillämpas (förhöjt grundavdrag och högre skattereduktion för arbetsinkomst). Pensionsavtal för äldre skiljer sig åt och modelleras inte.",
+    "EGENAVGIFTER_AGE_NOT_MODELLED": "Ålder {{age}} vid årets början: egenavgifterna är nedsatta för personer födda 1958 eller tidigare. Nedsättningen modelleras inte, så avgifterna visas för höga.",
+    "TAX_YEAR_MISMATCH": "Skatteåret {{taxYear}} matchar inte regeluppsättningen ({{rulesYear}})."
+  },
+  "assumption": {
+    "overhead_paid_by_firm": "Omkostnader betalas av LYVAN.", "bench_risk_firm": "LYVAN bär bänkrisk och lön vid sjukdom/semester.", "pension_on_base_salary": "Pension beräknas på grundlön.",
+    "pot_pays_overhead": "Omkostnader betalas ur konsultens pott.", "firm_pays_overhead": "Omkostnader betalas av LYVAN.", "umbrella_all_employment_income": "Allt beskattas som tjänsteinkomst.", "holiday_12pct": "Semesterersättning 12 %.",
+    "sole_trader_no_employer_pension": "Ingen arbetsgivarpension.", "egenavgifter_fixed_point": "Egenavgifter är avdragsgilla mot egen bas (fixpunkt).", "sole_trader_profit_taxed_same_year": "Hela överskottet beskattas samma år.",
+    "egenavgifter_before_fund": "Egenavgifter beräknas på överskottet före eventuell avsättning till periodiseringsfond (ska verifieras).",
+    "steady_state_dividend": "Utdelning antas ske med samma års regler och löner (stationärt tillstånd).", "gransbelopp_simplified": "Gränsbelopp förenklat: ingen ränta på omkostnadsbelopp.", "owner_no_holiday_pay": "Ägaren tar ingen semesterersättning."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "description": "Full-year net-tax fixtures for SE-2026 at the average municipal rate. Expected values must come from Skatteverket's tax calculator. Do not invent numbers. (The worked examples printed in SKV 433 are covered, exactly, by skv433-examples.json.)",
+  "municipalTaxRate": 0.3238,
+  "toleranceKrPerYear": 200,
+  "cases": [
+    { "earnedIncome": 240000, "expectedNetTax": null, "status": "TODO_VERIFY" },
+    { "earnedIncome": 360000, "expectedNetTax": null, "status": "TODO_VERIFY" },
+    { "earnedIncome": 480000, "expectedNetTax": null, "status": "TODO_VERIFY" },
+    { "earnedIncome": 600000, "expectedNetTax": null, "status": "TODO_VERIFY" },
+    { "earnedIncome": 660400, "expectedNetTax": null, "status": "TODO_VERIFY" },
+    { "earnedIncome": 720000, "expectedNetTax": null, "status": "TODO_VERIFY" },
+    { "earnedIncome": 900000, "expectedNetTax": null, "status": "TODO_VERIFY" },
+    { "earnedIncome": 1200000, "expectedNetTax": null, "status": "TODO_VERIFY" }
+  ]
+}

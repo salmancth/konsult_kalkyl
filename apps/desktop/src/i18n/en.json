@@ -1,0 +1,97 @@
+{
+  "app": { "title": "LYVAN Payout", "subtitle": "Consultant payout calculator", "disclaimer": "Estimates only – not tax advice. Verify all amounts against Skatteverket.", "loading": "Loading…" },
+  "banner": { "unverified": "The {{year}} rules are not fully verified against Skatteverket. Still unverified: {{items}}. Treat results as estimates." },
+  "tabs": { "label": "Views", "overview": "Overview", "offer": "Offer", "compare": "Compare", "sweep": "Revenue sweep", "optimizer": "Optimizer (own AB)", "saved": "Saved", "settings": "Settings" },
+  "header": { "language": "Language", "theme": "Theme", "settings": "Settings" },
+  "input": {
+    "revenue": "Billed revenue (ex. VAT)", "annual": "Per year", "hourly": "Hourly rate × hours", "hourlyRate": "Hourly rate (SEK)", "hours": "Billed hours",
+    "overhead": "Overhead (SEK/year)", "municipality": "Municipality", "municipalityCustom": "Custom rate / national average", "localFees": "Church fee {{church}} + burial fee {{burial}} (county average)", "municipalRate": "Municipal tax (%)", "birthYear": "Birth year", "church": "Member of the Church of Sweden", "taxYear": "Tax year",
+    "scenarioSettings": "Scenario settings", "common": "Common assumptions", "invalid": "Not a valid number", "clamped": "Adjusted to the allowed range {{min}} – {{max}}", "revenueSlider": "Billed revenue slider"
+  },
+  "view": { "annual": "Per year", "monthly": "Per month", "metric": "Metric", "period": "Period", "netCash": "Net cash", "consultantValue": "Consultant value (net + pension)", "companyMargin": "LYVAN margin" },
+  "card": { "net": "Net", "ofRevenue": "of revenue", "pension": "Pension", "warnings": "{{count}} warning(s)", "gross": "Gross", "toState": "To the state", "company": "LYVAN / provider", "retained": "Retained in company", "rank": "#{{n}}", "details": "Show details" },
+  "detail": {
+    "title": "Details", "line": "Line", "amount": "Amount", "pct": "% of revenue", "receiver": "Receiver", "formula": "Formula",
+    "reconciled": "Reconciled ✓ – lines add up to revenue", "reconciledShortfall": "Lines add up to revenue, but the result is flagged: the shortfall of {{amount, kr}} is carried in the balancing line",
+    "notReconciled": "Lines do not add up to revenue", "assumptions": "Assumptions", "warningsTitle": "Warnings", "close": "Close", "whereKrona": "Where each krona goes", "scenarioSettings": "Scenario settings", "balance": "Rounding adjustment in the balancing line: {{amount, kr}}"
+  },
+  "party": { "consultant": "Consultant", "company": "LYVAN", "state": "State", "pension": "Pension", "provider": "Provider", "external": "External costs", "retained": "Retained" },
+  "sweep": { "title": "Net cash vs revenue", "revenue": "Revenue", "crossover": "{{scenario}} takes the lead", "yourRevenue": "Your revenue" },
+  "offer": {"title": "Offer calculator", "intro": "Turn the calculation around: enter the pay you want and see what must be billed in each payout model, and which model gives the most at which revenue.", "targetNet": "Target pay per month (SEK)", "metric": "The target counts", "metric_netCash": "Net cash only", "metric_consultantValue": "Net cash + pension", "metric_totalValue": "Net cash + pension + money kept in my company (taxed later)", "metricNote": "Money left in your own company or fund is not yet taxed as income, so the last option shows more than you can spend.", "hoursHint": "Used for the hourly rate", "needTitle": "To get {{target}} per month you need to bill", "col": {"scenario": "Model", "perYear": "Per year", "perMonth": "Per month", "hourly": "Per hour", "company": "LYVAN / provider keeps", "netMonth": "Net per month", "taxShare": "Tax share"}, "lowest": "Lowest", "open": "Open", "unreachable": "Not reachable at any realistic revenue", "note": "Rules for {{year}}. Per month = per year ÷ 12. “Tax share” is tax and fees as a share of what remains after overhead and the LYVAN / provider share.", "bandsTitle": "Which model pays most at which revenue", "bandsIntro": "Compared on {{metric}}, with your settings.", "noBands": "Nothing to compare: the scenario settings are invalid.", "upTo": "Up to {{to}}", "from": "From {{from}}", "sheetTitle": "Offer sheet", "sheetIntro": "A one-page printout (or PDF) of the chosen model at the billing needed for your target.", "sheetScenario": "Model", "printSheet": "Print offer sheet", "sheet": {"title": "Payout offer", "headline_netCash": "To receive {{net}} per month net in the model “{{scenario}}”, bill:", "headline_consultantValue": "To reach {{net}} per month in net pay plus pension in the model “{{scenario}}”, bill:", "headline_totalValue": "To reach {{net}} per month in net pay, pension and money left in your company in the model “{{scenario}}”, bill:", "billing": "Billing needed", "perYear": "per year", "perMonth": "per month", "hourly": "Hourly rate ({{hours}} h/year)", "netMonth": "Net pay per month", "netYear": "Net pay per year", "pension": "Pension premiums per year", "tax": "Tax share", "breakdown": "Where the money goes", "perYearCol": "Per year", "perMonthCol": "Per month", "monthlyNote": "Monthly amounts are the annual amounts divided by 12; the actual monthly withholding follows Skatteverket's tax tables."}},
+  "compare": { "title": "Where the money goes", "mode": "Scale", "percent": "Share of total (100 %)", "kronor": "Kronor", "table": "Data table" },
+  "optimizer": {
+    "title": "Net vs salary (own AB)", "salary": "Salary", "best": "Best salary", "apply": "Use optimal salary", "pensionWeight": "Value of 1 kr pension", "retainedWeight": "Value of 1 kr left in AB", "objective": "Objective",
+    "netCashAtBest": "Net cash at the optimum", "pensionAtBest": "Pension at the optimum", "retainedAtBest": "Retained in AB at the optimum", "maxSalary": "Highest affordable salary", "weightsHelp": "The weights are saved with the own-AB settings and also used by the “Optimize” salary strategy."
+  },
+  "saved": { "title": "Saved calculations", "name": "Name", "save": "Save current calculation", "load": "Load", "delete": "Delete", "duplicate": "Duplicate", "empty": "No saved calculations yet.", "bestScenario": "Best", "confirmDelete": "Delete “{{name}}”?", "confirm": "Yes, delete", "cancel": "Cancel", "rename": "Rename" },
+  "settings": {
+    "language": "Language", "theme": "Theme", "themeSystem": "Follow system", "themeLight": "Light", "themeDark": "Dark", "taxYear": "Default tax year", "defaultMunicipal": "Default municipal tax (%)",
+    "lyvanDefaults": "LYVAN defaults", "lyvanDefaultsHelp": "Commercial defaults used for new calculations. Changing one also updates the current calculation if it still uses the old default.",
+    "firmRetentionPct": "Salaried: LYVAN keeps (%)", "firmCutPct": "Revenue share: LYVAN cut (%)", "brokerFeePct": "Own AB: LYVAN broker fee (%)", "providerFeePct": "Umbrella: provider fee (%)",
+    "resetOptions": "Reset scenario settings to defaults", "resetAll": "Reset the current calculation", "resetAllConfirm": "Reset all inputs of the current calculation? Saved calculations are kept.", "reset": "Reset",
+    "rules": "Tax rules", "rulesStatus": "Rule set {{id}}: {{status}}", "rulesVerified": "verified", "rulesUnverified": "not fully verified", "unverifiedItems": "Still unverified", "sources": "Sources",
+    "about": "About", "version": "Version {{version}}", "dataLocation": "All data stays on this computer. No network access, no telemetry."
+  },
+  "export": { "csv": "Export CSV", "print": "Print / PDF", "saved": "Saved: {{path}}", "failed": "Export failed: {{message}}", "col": { "scenario": "Scenario", "line": "Line", "amount": "Amount (SEK)", "pct": "% of revenue", "receiver": "Receiver", "kind": "Kind", "formula": "Formula", "revenue": "Revenue (SEK)", "rules": "Rules" } },
+  "print": { "title": "Payout comparison", "generated": "Generated", "inputs": "Inputs", "scenarios": "Scenario comparison", "ruleSet": "Rule set", "perScenario": "Detailed breakdown" },
+  "footer": { "rules": "Rules {{id}}", "verified": "verified", "unverified": "not fully verified" },
+  "error": {
+    "tooBig": "at most {{limit}}", "tooSmall": "at least {{limit}}", "invalidValue": "not a valid value",
+    "scenarioInvalid": "{{name}}: invalid settings", "fixOrReset": "Fix the value in the scenario settings or reset them to the defaults.", "resetOptions": "Reset scenario settings", "unexpected": "Unexpected error: {{message}}",
+    "boundaryTitle": "Something went wrong", "boundaryBody": "The view crashed. Your saved calculations are safe. Reload to continue.", "reload": "Reload", "loadFailed": "Saved data could not be read ({{message}}). Starting from defaults; the old file is overwritten on your next change."
+  },
+  "overview": { "assumptions": "Assumptions", "scenarioAssumptions": "{{name}}", "invalidScenarios": "Scenarios with invalid settings" },
+  "ruleItem": {
+    "municipalTaxAverage": "average municipal tax", "burialFeeAverage": "average burial fee", "defaultChurchFeeRate": "average church fee", "slp": "special payroll tax (SLP)", "itp1": "ITP 1 rates",
+    "loneVaxlingUplift": "salary-exchange uplift", "egenavgifterBeforePeriodiseringsfond": "egenavgifter before periodiseringsfond",
+    "semester": { "supplementPerDayAgreement": "holiday supplement (agreement)" },
+    "threeTwelve": { "wageBasedRate": "3:12 wage-based rate", "excessEmploymentCapIbb": "3:12 employment-income cap" }
+  },
+  "scenario": {
+    "salaried": { "label": "Salaried employee", "description": "Traditional consultancy: salary + pension, LYVAN carries sales and bench risk." },
+    "revenue-share": { "label": "Revenue share (70/30, 80/20)", "description": "High payout: LYVAN takes a cut, the consultant gets a pot paid as salary + pension." },
+    "umbrella": { "label": "Umbrella company", "description": "A billing platform takes a fee; everything is paid out as salary." },
+    "sole-trader": { "label": "Sole trader", "description": "Surplus taxed as business income with egenavgifter." },
+    "own-ab": { "label": "Own limited company (3:12)", "description": "Salary up to the state-tax threshold plus 3:12 dividends." }
+  },
+  "opt": {
+    "firmRetentionPct": "LYVAN keeps (%)", "firmCutPct": "LYVAN cut (%)", "overheadFromPot": "Overhead paid from the pot", "loneVaxling": "Salary exchange (SEK/year)",
+    "providerFeePct": "Fee (%)", "periodiseringsfondPct": "Periodiseringsfond (%, max 30)", "brokerFeePct": "LYVAN broker fee (%)", "salaryStrategy": "Salary strategy",
+    "customSalary": "Custom salary (SEK/year)", "ownershipPct": "Ownership (%)", "ownersInCompany": "Number of owners", "savedDividendSpace": "Saved dividend space (SEK)", "capDividendAtGransbelopp": "Cap dividend at gränsbelopp",
+    "pensionModel": "Pension", "holidayModel": "Holiday", "pensionWeight": "Optimizer: value of 1 kr pension", "retainedWeight": "Optimizer: value of 1 kr left in AB",
+    "strategy": { "brytpunkt": "Up to the threshold", "custom": "Custom salary", "optimize": "Optimize" },
+    "pension": { "itp1": "ITP 1", "pct": "Percent of salary", "none": "None" },
+    "holiday": { "supplement-legal": "Holiday supplement (legal)", "supplement-agreement": "Holiday supplement (agreement)", "compensation": "Holiday compensation 12 %", "none": "None" },
+    "pensionPct": "Pension (% of salary)"
+  },
+  "line": {
+    "revenue": "Billed revenue", "firm_retention": "LYVAN retention", "firm_cut": "LYVAN cut", "provider_fee": "Provider fee", "broker_fee": "LYVAN broker fee", "overhead": "Overhead",
+    "employer_fees": "Employer social contributions", "pension_premium": "Occupational pension", "special_payroll_tax": "Special payroll tax", "gross_salary": "Gross salary", "municipal_tax": "Municipal tax", "state_tax": "State income tax",
+    "burial_fee": "Burial fee", "church_fee": "Church fee", "public_service_fee": "Public service fee", "jobbskatteavdrag": "Jobbskatteavdrag (tax credit)", "earned_income_credit": "Earned-income tax credit", "net_cash": "Net cash",
+    "taxable_surplus": "Surplus", "periodiseringsfond": "Periodiseringsfond allocation", "egenavgifter": "Egenavgifter", "profit_before_tax": "Profit before tax", "corporate_tax": "Corporate tax",
+    "retained_in_ab": "Retained in AB", "dividend_gross": "Dividend (gross)", "net_salary": "Net salary", "dividend_tax": "Dividend tax (20%)", "dividend_excess_tax": "Tax on dividend above gränsbelopp", "net_dividend": "Net dividend"
+  },
+  "warning": {
+    "BUDGET_TOO_LOW": "The budget does not even cover the fixed costs.",
+    "ABOVE_BRYTPUNKT": "Income {{income, kr}} exceeds the brytpunkt {{brytpunkt, kr}} – 20 % state tax on the excess.",
+    "SALARY_BELOW_SGI_CAP": "Salary {{income, kr}} is below the SGI cap {{cap, kr}} – lower sickness/parental benefits.",
+    "SALARY_BELOW_PGI_CAP": "Salary {{income, kr}} is below the pensionable income cap {{cap, kr}} – lower public pension.",
+    "CONSIDER_LONEVAXLING": "Consider salary exchange to avoid state tax.", "NEGATIVE_PROFIT": "Negative profit.", "PERIODISERINGSFOND_TAXED_LATER": "The allocation is taxed when reversed.",
+    "PERIODISERINGSFOND_CAPPED": "The allocation was capped at the statutory maximum of {{maxPct, pct}}.",
+    "SOLE_TRADER_PERSONAL_LIABILITY": "Sole trader: personal liability, no employer pension.",
+    "DIVIDEND_EXCEEDS_GRANSBELOPP": "The dividend exceeds the gränsbelopp {{gransbelopp, kr}} by {{excess, kr}} – the excess is taxed as employment income.",
+    "RETAINED_IN_AB": "{{retained, kr}} stays in the AB (dividend capped at the gränsbelopp).", "PARTNER_SHARES_GRUNDBELOPP": "The grundbelopp is shared between the owners.",
+    "DIVIDEND_PAID_NEXT_YEAR": "Dividends are normally paid the following year (after the AGM).",
+    "SALARY_CAPPED_BY_BUDGET": "Salary capped at {{salary, kr}} by the budget (target {{target, kr}}).",
+    "AGE_66_PLUS": "Age {{age}} at the start of the year: the 66+ tax rules are applied (higher grundavdrag and skattereduktion för arbetsinkomst). Pension plans for older employees differ and are not modelled.",
+    "EGENAVGIFTER_AGE_NOT_MODELLED": "Age {{age}} at the start of the year: the egenavgifter are reduced for people born 1958 or earlier. That reduction is not modelled, so the contributions shown are too high.",
+    "TAX_YEAR_MISMATCH": "Tax year {{taxYear}} does not match the rule set ({{rulesYear}})."
+  },
+  "assumption": {
+    "overhead_paid_by_firm": "Overhead is paid by LYVAN.", "bench_risk_firm": "LYVAN carries bench risk and pay during sickness/holiday.", "pension_on_base_salary": "Pension is calculated on base salary.",
+    "pot_pays_overhead": "Overhead is paid from the consultant's pot.", "firm_pays_overhead": "Overhead is paid by LYVAN.", "umbrella_all_employment_income": "Everything is taxed as employment income.", "holiday_12pct": "12 % holiday compensation.",
+    "sole_trader_no_employer_pension": "No employer pension.", "egenavgifter_fixed_point": "Egenavgifter are deductible from their own base (fixed point).", "sole_trader_profit_taxed_same_year": "The whole surplus is taxed in the same year.",
+    "egenavgifter_before_fund": "Egenavgifter are calculated on the surplus before any periodiseringsfond allocation (to be verified).",
+    "steady_state_dividend": "Dividend assumed with the same year's rules and wages (steady state).", "gransbelopp_simplified": "Simplified gränsbelopp: no interest on omkostnadsbelopp.", "owner_no_holiday_pay": "The owner takes no holiday pay."
+  }
+}

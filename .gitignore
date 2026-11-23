@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+target/
+*.log
+.DS_Store
+.vite/
+*.tsbuildinfo
+apps/desktop/src-tauri/gen/

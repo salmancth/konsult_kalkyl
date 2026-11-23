@@ -1,0 +1,40 @@
+{
+  "name": "lyvan-payout",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "LYVAN Payout - payout calculator for a Swedish consulting AB",
+  "packageManager": "pnpm@11.24.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @lyvan/desktop dev",
+    "dev:web": "pnpm --filter @lyvan/desktop dev:web",
+    "build": "pnpm --filter @lyvan/desktop build",
+    "build:offline": "pnpm --filter @lyvan/desktop build:offline",
+    "build:web": "pnpm --filter @lyvan/desktop build:web",
+    "tauri": "pnpm --filter @lyvan/desktop tauri",
+    "test": "pnpm -r --workspace-concurrency=1 test",
+    "test:coverage": "pnpm --filter @lyvan/engine test:coverage",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "typecheck": "pnpm -r typecheck",
+    "check": "pnpm typecheck && pnpm lint && pnpm test",
+    "demo": "pnpm --filter @lyvan/engine demo"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^4.1.12",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "fast-check": "^4.0.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.0.0",
+    "vitest": "^4.1.12"
+  }
+}
